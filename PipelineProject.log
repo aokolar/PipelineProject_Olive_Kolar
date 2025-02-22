@@ -1,0 +1,56 @@
+The HCMV genome (NC_006273.2) has 169 CDS.
+
+Kallisto Output:
+sample	condition	min_tpm	med_tpm	mean_tpm	max_tpm
+SRX2896360	2dpi	0.0	2031.45	5917.15885	92658.4
+SRX2896363	6dpi	0.0	2039.85	5917.16265	221134.0
+SRX2896374	2dpi	0.0	1953.7	5917.15595	257833.0
+SRX2896375	6dpi	0.0	1070.95	5917.16061	257833.0
+
+Sleuth Output:
+target_id	test_stat	pval	test_stat
+NC_006273.2:118788-120467	13.6335646100389	0.000222177655708635	13.6335646100389
+NC_006273.2:146538-147653	13.3811839225444	0.000254161243119255	13.3811839225444
+NC_006273.2:186462-186878	13.3453883810878	0.000259058900623208	13.3453883810878
+NC_006273.2:161003-161185,161262-161462,161546-161692	12.5171523207328	0.000403233003694937	12.5171523207328
+NC_006273.2:183406-184323	11.0522728390303	0.000885785430528258	11.0522728390303
+NC_006273.2:153233-156103	11.048568670178	0.000887556938580425	11.048568670178
+NC_006273.2:185705-186280	11.045528663268	0.000889013488638074	11.045528663268
+NC_006273.2:107430-108848	9.92844997017747	0.00162743524109968	9.92844997017747
+NC_006273.2:106995-107496,108854-109088	9.02736672409906	0.00265967342125412	9.02736672409906
+NC_006273.2:37605-38174	8.67689219848375	0.00322270074395118	8.67689219848375
+NC_006273.2:226662-228050	8.42365080088793	0.00370371371717048	8.42365080088793
+NC_006273.2:38327-40114	8.37383424076808	0.00380661653795854	8.37383424076808
+NC_006273.2:209518-210306	8.33533110620045	0.00388813909550831	8.33533110620045
+
+Bowtie2 Output:
+Donor 1 (2dpi) had 2259287 read pairs before Bowtie2 filtering and 1253140 read pairs after.
+Donor 1 (6dpi) had 2004530 read pairs before Bowtie2 filtering and 992853 read pairs after.
+Donor 3 (2dpi) had 2730258 read pairs before Bowtie2 filtering and 1561617 read pairs after.
+Donor 3 (6dpi) had 2476889 read pairs before Bowtie2 filtering and 1046826 read pairs after.
+
+SPAdes Input Commands Used:
+spades.py --pe-1 1 HCMVmapped1.1.fastq --pe-2 1 HCMVmapped1.2.fastq --pe-1 2 HCMVmapped2.1.fastq --pe-2 2 HCMVmapped2.2.fastq -t 2 -k 77 -o donor1_assembly
+spades.py --pe-1 1 HCMVmapped3.1.fastq --pe-2 1 HCMVmapped3.2.fastq --pe-1 2 HCMVmapped4.1.fastq --pe-2 2 HCMVmapped4.2.fastq -t 2 -k 77 -o donor3_assembly
+
+BLAST Results:
+Donor 1:
+sacc	pident	length	qstart	qend	sstart	send	bitscore	evalue	stitle
+NC_006273.2	98.462	2470	1	2470	78176	80645	4351	0.0	NC_006273.2 Human herpesvirus 5 strain Merlin, complete genome
+NC_003521.1	88.046	527	1136	1662	76960	77486	625	8.11e-179	NC_003521.1 Panine herpesvirus 2 strain Heberling, complete genome
+NC_003521.1	84.065	615	434	1045	76072	76683	588	1.06e-167	NC_003521.1 Panine herpesvirus 2 strain Heberling, complete genome
+NC_033176.1	77.612	536	1140	1668	74474	74998	309	9.28e-84	NC_033176.1 Cynomolgus cytomegalovirus isolate 31908, complete genome
+NC_016154.1	77.612	536	1140	1668	69490	70014	309	9.28e-84	NC_016154.1 Cynomolgus macaque cytomegalovirus strain Ottawa, complete genome
+NC_027016.1	76.262	535	1136	1665	150746	150220	272	1.22e-72	NC_027016.1 Papio ursinus cytomegalovirus isolate OCOM4-52, complete genome
+Donor 3:
+sacc	pident	length	qstart	qend	sstart	send	bitscore	evalue	stitle
+NC_006273.2	99.248	4123	1	4123	129608	125486	7443	0.0	NC_006273.2 Human herpesvirus 5 strain Merlin, complete genome
+NC_003521.1	85.002	2467	1	2463	129681	127219	2499	0.0	NC_003521.1 Panine herpesvirus 2 strain Heberling, complete genome
+NC_003521.1	84.719	1564	2563	4122	127071	125512	1557	0.0	NC_003521.1 Panine herpesvirus 2 strain Heberling, complete genome
+NC_075417.1	74.679	2492	7	2473	105433	107896	1057	0.0	NC_075417.1 Mandrillus leucophaeus cytomegalovirus isolate OCOM6-2, complete genome
+NC_075417.1	76.897	1463	2667	4120	108012	109466	813	0.0	NC_075417.1 Mandrillus leucophaeus cytomegalovirus isolate OCOM6-2, complete genome
+NC_033176.1	74.268	2460	7	2443	118183	115749	992	0.0	NC_033176.1 Cynomolgus cytomegalovirus isolate 31908, complete genome
+NC_006150.1	74.161	2442	7	2426	119461	117042	974	0.0	NC_006150.1 Macacine herpesvirus 3, complete genome
+NC_012783.2	74.087	2493	7	2468	118433	115975	965	0.0	NC_012783.2 Cercopithecine herpesvirus 5 strain 2715, complete genome
+NC_016154.1	73.885	2443	7	2426	113191	110772	935	0.0	NC_016154.1 Cynomolgus macaque cytomegalovirus strain Ottawa, complete genome
+NC_002512.2	89.796	49	1335	1383	114217	114170	62.1	4.81e-09	NC_002512.2 Rat cytomegalovirus Maastricht, complete genome
