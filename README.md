@@ -1,6 +1,6 @@
 # PipelineProject_Olive_Kolar
 
-## Running this pipeline
+## Running This Pipeline
 
 First of all, download the file "pipeline_wrapper.py"---this is the pipeline script that does all the work for you. Upload it to your workspace and keep it in your home directory.
 
@@ -20,7 +20,7 @@ Tools:
 - SPAdes
 - BLAST+
 
-### Other necessary information:
+### Other Necessary Files:
 
 You must download the R script "pipeline_sleuth.R" included in this repo in order to run sleuth. Upload this file into your workspace and keep it in your home directory. Do not put it in a folder.
 
@@ -53,7 +53,7 @@ This will download and unpack all necessary files. From here, just execute the P
 
 
 
-#### For smaller sample-size genomes (this pipeline will run in under 1 minute):
+#### For smaller sample-size genomes (this pipeline will run in ~1 minute):
 
 Download all of the files named "SRX_______.fastq" (there are 8 of them) in this repo and upload them into your workspace. Keep them in your home directory, and do not put them in a folder.
 
