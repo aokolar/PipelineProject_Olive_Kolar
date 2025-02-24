@@ -49,7 +49,7 @@ Execute the following commands in your terminal, one at a time.
 
 This will download and unpack all necessary files. From here, just execute the Python pipeline script and it will do everything else for you. If you want to execute the script through the command line, use this command:
 
-    python pipeline_wrapper.py
+    $ python pipeline_wrapper.py
 
 
 
@@ -59,7 +59,7 @@ Download all of the files named "SRX_______.fastq" (there are 8 of them) in this
 
 From there, just execute the Python pipeline script and it will do everything else for you. If you want to execute the script through the command line, use this command:
 
-    python pipeline_wrapper.py
+    $ python pipeline_wrapper.py
 
 
 
