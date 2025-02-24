@@ -27,7 +27,7 @@ You must download the R script "pipeline_sleuth.R" included in this repo in orde
 
 ### Input Data:
 
-#### If you want full-size genomes (this pipeline will take quite some time to run):
+#### For full-size genomes (this pipeline will take quite some time to run):
 
 Execute the following commands in your terminal, one at a time.
 
