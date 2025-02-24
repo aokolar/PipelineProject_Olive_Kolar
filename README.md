@@ -29,25 +29,25 @@ You must download the R script "pipeline_sleuth.R" included in this repo in orde
 
 Execute the following commands in your terminal, one at a time.
 
-$ wget https://www.ncbi.nlm.nih.gov/sra/SRX2896360
-
-$ wget https://www.ncbi.nlm.nih.gov/sra/SRX2896363
-
-$ wget https://www.ncbi.nlm.nih.gov/sra/SRX2896374
-
-$ wget https://www.ncbi.nlm.nih.gov/sra/SRX2896375
-
-$ fasterq-dump SRX2896360
-
-$ fasterq-dump SRX2896363
-
-$ fasterq-dump SRX2896374
-
-$ fasterq-dump SRX2896375
+    $ wget https://www.ncbi.nlm.nih.gov/sra/SRX2896360
+    
+    $ wget https://www.ncbi.nlm.nih.gov/sra/SRX2896363
+    
+    $ wget https://www.ncbi.nlm.nih.gov/sra/SRX2896374
+    
+    $ wget https://www.ncbi.nlm.nih.gov/sra/SRX2896375
+    
+    $ fasterq-dump SRX2896360
+    
+    $ fasterq-dump SRX2896363
+    
+    $ fasterq-dump SRX2896374
+    
+    $ fasterq-dump SRX2896375
 
 This will download and unpack all necessary files. From here, just execute the Python pipeline script and it will do everything else for you. If you want to execute the script through the command line, use this command:
 
-python pipeline_wrapper.py
+    python pipeline_wrapper.py
 
 
 
@@ -57,7 +57,7 @@ Download all of the files named "SRX_______.fastq" (there are 8 of them) in this
 
 From there, just execute the Python pipeline script and it will do everything else for you. If you want to execute the script through the command line, use this command:
 
-python pipeline_wrapper.py
+    python pipeline_wrapper.py
 
 
 
