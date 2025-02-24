@@ -2,6 +2,8 @@
 
 ## Running this pipeline
 
+First of all, download the file "pipeline_wrapper.py"---this is the pipeline script that does all the work for you. Upload it to your workspace and keep it in your home directory.
+
 ### Dependencies:
 Python modules:
 - os
